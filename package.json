@@ -7,6 +7,7 @@
     "Dylan Alvarez <dylanalvarez1995@gmail.com>",
     "Manuel Llauró <llauromanuel@gmail.com>"
   ],
+  "private": true,
   "engines": {
     "node": "12.14.0"
   },
