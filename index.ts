@@ -1,3 +1,3 @@
-import { validateCuit } from "src";
+import { validateCuit } from "./src";
 
 export { validateCuit };
