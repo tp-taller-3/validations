@@ -47,7 +47,6 @@
     "stash": "git stash -u --keep-index",
     "unstash": "git stash pop",
     "check-unstaged": "bash scripts/check_unstaged.sh",
-    "postinstall": "yarn build",
     "build": "yarn clean && tsc -p .",
     "clean": "rm -rf dist"
   },
