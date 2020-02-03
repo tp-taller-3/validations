@@ -48,7 +48,7 @@
     "unstash": "git stash pop",
     "check-unstaged": "bash scripts/check_unstaged.sh",
     "postinstall": "yarn build",
-    "build": "yarn clean && tsc --project .",
+    "build": "yarn clean && tsc",
     "clean": "rm -rf dist"
   },
   "repository": {
