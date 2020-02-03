@@ -24,12 +24,12 @@ Trabajo Práctico Profesional, FIUBA, 2020
 
 ### development
 
-Stand on this repo root dir and run
+Stand on this repository root and run:
 ```
     yarn link
 ```
 
-Then stand on another repo dir and add to the package.json
+Then, stand on another repository root and add the following to the package.json:
 ```json
   {
     "dependencies": {
