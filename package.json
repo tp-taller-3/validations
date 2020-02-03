@@ -12,6 +12,7 @@
     "node": "12.14.0"
   },
   "main": "index.ts",
+  "type": "module",
   "dependencies": {
     "@types/bluebird": "3.5.29",
     "@types/node": "13.1.4",
