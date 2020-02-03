@@ -43,11 +43,10 @@
     "lint:src": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:test": "tslint -c tslint.json 'test/**/*.ts'",
     "lint": "yarn lint:src && yarn lint:test",
-
     "stash": "git stash -u --keep-index",
     "unstash": "git stash pop",
     "check-unstaged": "bash scripts/check_unstaged.sh",
-
+    "prepare": "yarn build",
     "build": "tsc --project .",
     "build-migrations": "yarn clean:compiled-migrations && tsc -p src/migrations",
     "clean": "rm -rf dist"
