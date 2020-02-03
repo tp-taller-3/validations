@@ -11,8 +11,8 @@
   "engines": {
     "node": "12.14.0"
   },
-  "main": "index.ts",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@types/bluebird": "3.5.29",
     "@types/node": "13.1.4",
