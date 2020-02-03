@@ -1,3 +1,3 @@
-import * as validations from "src";
+import { validateCuit } from "src";
 
-export { validations };
+export { validateCuit };
