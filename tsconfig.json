@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
     "baseUrl": "",
+    "rootDir": ".",
     "outDir": "./dist",
+    "declaration": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "module": "commonjs",
     "target": "es6",
     "lib": ["es6", "dom"],
-    "sourceMap": true,
+    "sourceMap": false,
     "allowJs": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
