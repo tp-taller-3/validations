@@ -11,7 +11,7 @@
   "engines": {
     "node": "12.14.0"
   },
-  "main": "src/index.ts",
+  "main": "index.ts",
   "dependencies": {
     "@types/bluebird": "3.5.29",
     "@types/node": "13.1.4",
@@ -46,7 +46,7 @@
     "stash": "git stash -u --keep-index",
     "unstash": "git stash pop",
     "check-unstaged": "bash scripts/check_unstaged.sh",
-    "prepare": "yarn build",
+    "prepack": "yarn build",
     "build": "tsc --project .",
     "build-migrations": "yarn clean:compiled-migrations && tsc -p src/migrations",
     "clean": "rm -rf dist"
