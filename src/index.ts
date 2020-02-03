@@ -1,3 +1,4 @@
 import { validateCuit } from "./cuitValidator";
+import { validateName } from "./validateName";
 
-export { validateCuit };
+export { validateName, validateCuit };
