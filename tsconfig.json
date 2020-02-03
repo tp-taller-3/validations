@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "",
-    "rootDir": ".",
     "outDir": "./dist",
     "declaration": true,
     "resolveJsonModule": true,
