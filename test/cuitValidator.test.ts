@@ -17,4 +17,8 @@ describe("cuitValidator", () => {
     const cuit: string = `${typePerson}${dni}${verificationCode}`;
     expect(() => validateCuit(cuit)).toThrow(InvalidCuitError);
   });
+
+  it("raise an error if cuit is null", () => {
+    expect(() => validateCuit(null)).toThrow(InvalidCuitError);
+  });
 });
