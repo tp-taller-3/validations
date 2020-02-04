@@ -1,8 +1,8 @@
 export class LongNameError extends Error {
-  public static message: string = "name should have less than 35 characters";
+  public static maximumNameLength: number = 35;
 
   constructor() {
-    super(LongNameError.message);
+    super(`Name should have less than ${LongNameError.maximumNameLength} characters`);
   }
 
 }

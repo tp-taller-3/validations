@@ -1,8 +1,5 @@
 export class NameWithDigitsError extends Error {
-  public static message: string = "name should not have digits";
-
   constructor() {
-    super(NameWithDigitsError.message);
+    super("Name should not have digits");
   }
-
 }
