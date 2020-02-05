@@ -1,9 +1,9 @@
 language: node_js
 before_script:
-  - yarn install
+  - npm install
 script:
-  - yarn lint && yarn test
-after_success: yarn coverage
+  - npm lint && npm test
+after_success: npm coverage
 notifications:
   email:
     recipients:

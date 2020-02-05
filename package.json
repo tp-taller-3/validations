@@ -41,16 +41,16 @@
     "typescript": "3.7.4"
   },
   "scripts": {
-    "prepublish": "yarn build",
+    "prepublish": "npm run build",
     "test": "jest --coverage --runInBand",
     "coverage": "cat coverage/lcov.info | coveralls",
     "lint:src": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:test": "tslint -c tslint.json 'test/**/*.ts'",
-    "lint": "yarn lint:src && yarn lint:test",
+    "lint": "npm run lint:src && npm run lint:test",
     "stash": "git stash -u --keep-index",
     "unstash": "git stash pop",
     "check-unstaged": "bash scripts/check_unstaged.sh",
-    "build": "yarn clean && tsc -p .",
+    "build": "npm run clean && tsc -p .",
     "clean": "rm -rf dist"
   },
   "repository": {
@@ -64,7 +64,7 @@
   "homepage": "https://github.com/fiuba-laboral-v2/validations#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "yarn check-unstaged && yarn lint && yarn test"
+      "pre-commit": "npm run check-unstaged && npm run lint && npm run test"
     }
   }
 }
