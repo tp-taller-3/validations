@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# testing
+coverage
+.*.sh
+
+# production
+build
+dist
+dist_migrations
+
+# misc
+*.log
+.DS_Store
+.idea
+.vscode
+.env
+.env.local
+.env.staging.local
+.env.development.local
+.env.test.local
+.env.production.local

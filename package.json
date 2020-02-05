@@ -1,0 +1,72 @@
+{
+  "name": "validations-fiuba-laboral-v2",
+  "version": "1.0.1",
+  "description": "Trabajo Práctico Profesional, FIUBA, 2020",
+  "contributors": [
+    "Sebastian Blanco <sebastian.e.blanco@gmail.com>",
+    "Dylan Alvarez <dylanalvarez1995@gmail.com>",
+    "Manuel Llauró <llauromanuel@gmail.com>"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "12.14.0",
+    "npm": "6.13.4"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@types/bluebird": "3.5.29",
+    "@types/node": "13.1.4",
+    "@types/node-fetch": "2.5.4",
+    "@types/validator": "12.0.1",
+    "express": "4.17.1",
+    "husky": "3.1.0",
+    "node": "12.14.0",
+    "nodemon": "2.0.2",
+    "reflect-metadata": "0.1.13",
+    "typescript-logging": "0.6.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@types/jest": "24.0.25",
+    "babel-jest": "24.9.0",
+    "coveralls": "3.0.9",
+    "eslint": "6.8.0",
+    "jest": "24.9.0",
+    "ts-jest": "24.2.0",
+    "ts-node": "8.5.4",
+    "tslint": "5.18.0",
+    "tslint-config-fiuba-laboral-v2": "1.0.3",
+    "typescript": "3.7.4"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "jest --coverage --runInBand",
+    "coverage": "cat coverage/lcov.info | coveralls",
+    "lint:src": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:test": "tslint -c tslint.json 'test/**/*.ts'",
+    "lint": "npm run lint:src && npm run lint:test",
+    "stash": "git stash -u --keep-index",
+    "unstash": "git stash pop",
+    "check-unstaged": "bash scripts/check_unstaged.sh",
+    "build": "npm run clean && tsc -p .",
+    "postinstall": "yarn build",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiuba-laboral-v2/validations.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://fiuba-laboral-v2.atlassian.net"
+  },
+  "homepage": "https://github.com/fiuba-laboral-v2/validations#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check-unstaged && npm run lint && npm run test"
+    }
+  }
+}
