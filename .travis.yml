@@ -15,7 +15,7 @@ deploy:
   email: sebastian.e.blanco@gmail.com
   edge: true
   api_key:
-    secure: 32105297-44ed-4376-8c0f-8f48db735870
+    secure: 5606ee96-9a8c-4d95-bb21-316745a1a89c
   on:
     repo: fiuba-laboral-v2/validations
     branch: feature/64-company-profile-validations
