@@ -8,25 +8,25 @@ Trabajo Práctico Profesional, FIUBA, 2020
 # Get started
 
 ```
-    yarn install
+    npm install
 ```
 
 ### Linter
 
 ```
-    yarn lint
+    npm run lint
 ```
 
 ### Test
 ```
-    yarn test
+    npm test
 ```
 
 ### development
 
 Stand on this repository root and run:
 ```
-    yarn link
+    npm link
 ```
 
 Then, stand on another repository root and add the following to the package.json:
