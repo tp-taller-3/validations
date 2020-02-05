@@ -18,3 +18,4 @@ deploy:
     secure: f4d2f33a-77b7-4af2-907e-733fc6138161
   on:
     repo: fiuba-laboral-v2/validations
+    branch: feature/64-company-profile-validations
