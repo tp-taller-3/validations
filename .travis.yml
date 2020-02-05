@@ -2,21 +2,21 @@ language: node_js
 cache:
   npm: false
 before_script:
-  - npm install
+- npm install
 script:
-  - npm run lint && npm run test
+- npm run lint && npm run test
 after_success: npm run coverage
 notifications:
   email:
     recipients:
-      - llauromanuel@gmail.com
-      - dylanalvarez1995@gmail.com
-      - sebastian.e.blanco@gmail.com
+    - llauromanuel@gmail.com
+    - dylanalvarez1995@gmail.com
+    - sebastian.e.blanco@gmail.com
 deploy:
   provider: npm
   email: sebastian.e.blanco@gmail.com
   edge: true
   api_key:
-    secure: 4f83659fd6463fdaa8ece672029d331828cc0c3e780134153795c0711f3a533c
+    secure: CNp1UzkumSzqrWDPgh4LquTxbRgpzmJzNy/oc3T4yQ39n+cLCAzn1pQI74zsRs+CaTix31yBSP7X8ub/Hc2dMW1WHR6UzGqM2gWlPRS77fBzqpXQKLZRC3h2Bzpsk4Svdnv+jpOuXb4WbHokgYWweNgGsmdtPqbsKSNg2HJPDzehPDn3KzZCPgdFcvUOmaMZ/pcwasTIvgmXq0F/Vq2HhBgIRqLQ0HVkdVYH/iNLeJSW8NkY/uCaypbHddZ1s8DCqh10z+Mv5WQaBRAye777oqLJyFWZG1KMsFc35OgK29y43giqzkMD4AECXUdWA3xkGpcTPUiCIb3uJvEWdJFuja/4h1sgb5khug8/7jRVrA6QKx9W/bZO4m2AJDT9POidafdDjSIm/r6VIJhn1LM0F1JM6+v/ET97dXHJUjBU3jMDxTThSu1GT4cMFJKy8QXcLJ8+gPWiSi0qRbnKuzAbsZ3N8+DLp7eIVYA4nEqJA4CVlvYJc8nUQPYFUz1rnXDFGmiaGM7hYruKLF83Fe70UJHPxn7CR7ZCv5ciY3KVSRm/N/IN35hd6haR3PXSoFAa4+RI8Ezfv+3Nx12JoRq/6zGX2NkwvcJZMkuG6p20xsPC1GWQ5c4mkUYEl6bKYuagwcHKPyuAoyvNqusd6N/J69DWdUQ+nMeExj+X09r6B3Y=
   on:
     repo: fiuba-laboral-v2/validations
