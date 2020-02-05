@@ -10,3 +10,11 @@ notifications:
       - llauromanuel@gmail.com
       - dylanalvarez1995@gmail.com
       - sebastian.e.blanco@gmail.com
+deploy:
+  provider: npm
+  email: sebastian.e.blanco@gmail.com
+  edge: true
+  api_key:
+    secure: f4d2f33a-77b7-4af2-907e-733fc6138161
+  on:
+    repo: fiuba-laboral-v2/validations

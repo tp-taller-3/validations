@@ -7,7 +7,9 @@
     "Dylan Alvarez <dylanalvarez1995@gmail.com>",
     "Manuel Llauró <llauromanuel@gmail.com>"
   ],
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": "12.14.0"
   },
@@ -39,6 +41,7 @@
     "typescript": "3.7.4"
   },
   "scripts": {
+    "prepublish": "yarn build",
     "test": "jest --coverage --runInBand",
     "coverage": "cat coverage/lcov.info | coveralls",
     "lint:src": "tslint -c tslint.json 'src/**/*.ts'",
