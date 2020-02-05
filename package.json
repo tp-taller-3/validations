@@ -52,6 +52,7 @@
     "unstash": "git stash pop",
     "check-unstaged": "bash scripts/check_unstaged.sh",
     "build": "npm run clean && tsc -p .",
+    "postinstall": "yarn build",
     "clean": "rm -rf dist"
   },
   "repository": {
