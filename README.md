@@ -26,7 +26,7 @@ Trabajo Práctico Profesional, FIUBA, 2020
 
 Stand on this repository root and run:
 ```
-    npm link
+    yarn link
 ```
 
 Then, stand on another repository root and add the following to the package.json:
