@@ -29,15 +29,7 @@ Stand on this repository root and run:
     yarn link
 ```
 
-Then, stand on another repository root and add the following to the package.json:
-```json
-  {
-    "dependencies": {
-      "validations": "git+https://github.com/fiuba-laboral-v2/validations.git#some-branch"
-    }  
-  }
+Then, stand on the repository root that uses this lib and run:
 ```
-And then run:
-```
-    yarn link validations
+    yarn link "validations-fiuba-laboral-v2"
 ```
