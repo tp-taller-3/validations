@@ -11,6 +11,7 @@ dist
 dist_migrations
 
 # misc
+codes.txt
 *.log
 .DS_Store
 .idea
