@@ -1,7 +1,7 @@
 import { validateName } from "../src";
 import { EmptyNameError, LongNameError, NameWithDigitsError } from "../src/Errors";
 
-describe("nameValidator", () => {
+describe("validateName", () => {
   it("raise an error if name is empty", () => {
     expect(() => validateName("")).toThrow(EmptyNameError);
   });

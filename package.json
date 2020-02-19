@@ -1,6 +1,6 @@
 {
   "name": "validations-fiuba-laboral-v2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Trabajo Práctico Profesional, FIUBA, 2020",
   "contributors": [
     "Sebastian Blanco <sebastian.e.blanco@gmail.com>",
@@ -21,6 +21,7 @@
     "@types/node": "13.1.4",
     "@types/node-fetch": "2.5.4",
     "@types/validator": "12.0.1",
+    "email-validator": "2.0.4",
     "express": "4.17.1",
     "husky": "3.1.0",
     "node": "12.14.0",
