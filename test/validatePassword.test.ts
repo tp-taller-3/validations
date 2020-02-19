@@ -51,4 +51,8 @@ describe("validatePassword", () => {
   it("errors on passwords with spaces", () => {
     expect(() => validatePassword("Dylan Alvarez95")).toThrow(PasswordWithSpacesError);
   });
+
+  it("allows passwords that pass all these conditions", () => {
+    expect(() => validatePassword("DylanAlvarez95")).not.toThrow();
+  });
 });
