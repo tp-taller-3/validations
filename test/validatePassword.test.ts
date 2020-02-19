@@ -1,5 +1,5 @@
 import {
-  LongPasswordError,
+  LongPasswordError, PasswordWithoutDigitsError,
   PasswordWithoutLowercaseError,
   PasswordWithoutUppercaseError,
   ShortPasswordError
@@ -42,5 +42,9 @@ describe("validatePassword", () => {
     expect(() =>
       validatePassword("AVERYSECRETPASS95")
     ).toThrow(PasswordWithoutLowercaseError);
+  });
+
+  it("errors on passwords without digits", () => {
+    expect(() => validatePassword("DylanAlvarez")).toThrow(PasswordWithoutDigitsError);
   });
 });

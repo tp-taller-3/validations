@@ -3,7 +3,8 @@ import {
   LongPasswordError,
   PasswordWithoutLowercaseError,
   PasswordWithoutUppercaseError,
-  ShortPasswordError
+  ShortPasswordError,
+  PasswordWithoutDigitsError
 } from "./Errors";
 
 const minLength = 10;
@@ -24,6 +25,7 @@ const validatePassword = (password: string) => {
   if (failedRules.includes("max")) throw new LongPasswordError(maxLength);
   if (failedRules.includes("uppercase")) throw new PasswordWithoutUppercaseError();
   if (failedRules.includes("lowercase")) throw new PasswordWithoutLowercaseError();
+  if (failedRules.includes("digits")) throw new PasswordWithoutDigitsError();
 };
 
 export { validatePassword };

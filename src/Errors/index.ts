@@ -8,6 +8,7 @@ import { ShortPasswordError } from "./ShortPasswordError";
 import { LongPasswordError } from "./LongPasswordError";
 import { PasswordWithoutUppercaseError } from "./PasswordWithoutUppercaseError";
 import { PasswordWithoutLowercaseError } from "./PasswordWithoutLowercaseError";
+import { PasswordWithoutDigitsError } from "./PasswordWithoutDigitsError";
 
 export {
   EmptyNameError,
@@ -19,5 +20,6 @@ export {
   ShortPasswordError,
   LongPasswordError,
   PasswordWithoutUppercaseError,
-  PasswordWithoutLowercaseError
+  PasswordWithoutLowercaseError,
+  PasswordWithoutDigitsError
 };
