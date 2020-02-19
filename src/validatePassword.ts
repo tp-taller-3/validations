@@ -4,7 +4,8 @@ import {
   PasswordWithoutLowercaseError,
   PasswordWithoutUppercaseError,
   ShortPasswordError,
-  PasswordWithoutDigitsError
+  PasswordWithoutDigitsError,
+  PasswordWithSpacesError
 } from "./Errors";
 
 const minLength = 10;
@@ -26,6 +27,7 @@ const validatePassword = (password: string) => {
   if (failedRules.includes("uppercase")) throw new PasswordWithoutUppercaseError();
   if (failedRules.includes("lowercase")) throw new PasswordWithoutLowercaseError();
   if (failedRules.includes("digits")) throw new PasswordWithoutDigitsError();
+  if (failedRules.includes("spaces")) throw new PasswordWithSpacesError();
 };
 
 export { validatePassword };

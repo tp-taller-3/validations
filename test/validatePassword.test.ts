@@ -1,7 +1,7 @@
 import {
   LongPasswordError, PasswordWithoutDigitsError,
   PasswordWithoutLowercaseError,
-  PasswordWithoutUppercaseError,
+  PasswordWithoutUppercaseError, PasswordWithSpacesError,
   ShortPasswordError
 } from "../src/Errors";
 import { validatePassword } from "../src";
@@ -46,5 +46,9 @@ describe("validatePassword", () => {
 
   it("errors on passwords without digits", () => {
     expect(() => validatePassword("DylanAlvarez")).toThrow(PasswordWithoutDigitsError);
+  });
+
+  it("errors on passwords with spaces", () => {
+    expect(() => validatePassword("Dylan Alvarez95")).toThrow(PasswordWithSpacesError);
   });
 });
