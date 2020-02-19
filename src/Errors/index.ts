@@ -4,6 +4,7 @@ import { EmptyNameError } from "./EmptyNameError";
 import { LongNameError } from "./LongNameError";
 import { NameWithDigitsError } from "./NameWithDigitsError";
 import { InvalidEmailError } from "./InvalidEmailError";
+import { ShortPasswordError } from "./ShortPasswordError";
 
 export {
   EmptyNameError,
@@ -11,5 +12,6 @@ export {
   NameWithDigitsError,
   WrongLengthCuitError,
   InvalidCuitError,
-  InvalidEmailError
+  InvalidEmailError,
+  ShortPasswordError
 };
