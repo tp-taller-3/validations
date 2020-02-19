@@ -1,5 +1,6 @@
 import { LongPasswordError, ShortPasswordError } from "../src/Errors";
 import { validatePassword } from "../src";
+import { PasswordWithoutUppercaseError } from "../src/Errors/PasswordWithoutUppercaseError";
 
 describe("validatePassword", () => {
   it("errors on short passwords", () => {
@@ -25,5 +26,11 @@ describe("validatePassword", () => {
     }
     expect(error).toBeInstanceOf(LongPasswordError);
     expect(error.maxLength).toEqual(100);
+  });
+
+  it("errors on passwords without uppercase characters", () => {
+    expect(() =>
+      validatePassword("averysecretpass95")
+    ).toThrow(PasswordWithoutUppercaseError);
   });
 });

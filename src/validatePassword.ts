@@ -1,5 +1,6 @@
 import PasswordValidator from "password-validator";
 import { LongPasswordError, ShortPasswordError } from "./Errors";
+import { PasswordWithoutUppercaseError } from "./Errors/PasswordWithoutUppercaseError";
 
 const minLength = 10;
 const maxLength = 100;
@@ -17,6 +18,7 @@ const validatePassword = (password: string) => {
 
   if (failedRules.includes("min")) throw new ShortPasswordError(minLength);
   if (failedRules.includes("max")) throw new LongPasswordError(maxLength);
+  if (failedRules.includes("uppercase")) throw new PasswordWithoutUppercaseError();
 };
 
 export { validatePassword };
