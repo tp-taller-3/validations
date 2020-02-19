@@ -33,15 +33,11 @@ describe("validatePassword", () => {
   });
 
   it("errors on passwords without uppercase characters", () => {
-    expect(() =>
-      validatePassword("averysecretpass95")
-    ).toThrow(PasswordWithoutUppercaseError);
+    expect(() => validatePassword("asecretpass95")).toThrow(PasswordWithoutUppercaseError);
   });
 
   it("errors on passwords without lowercase characters", () => {
-    expect(() =>
-      validatePassword("AVERYSECRETPASS95")
-    ).toThrow(PasswordWithoutLowercaseError);
+    expect(() => validatePassword("ASECRETPASS95")).toThrow(PasswordWithoutLowercaseError);
   });
 
   it("errors on passwords without digits", () => {
