@@ -6,6 +6,8 @@ import { NameWithDigitsError } from "./NameWithDigitsError";
 import { InvalidEmailError } from "./InvalidEmailError";
 import { ShortPasswordError } from "./ShortPasswordError";
 import { LongPasswordError } from "./LongPasswordError";
+import { PasswordWithoutUppercaseError } from "./PasswordWithoutUppercaseError";
+import { PasswordWithoutLowercaseError } from "./PasswordWithoutLowercaseError";
 
 export {
   EmptyNameError,
@@ -15,5 +17,7 @@ export {
   InvalidCuitError,
   InvalidEmailError,
   ShortPasswordError,
-  LongPasswordError
+  LongPasswordError,
+  PasswordWithoutUppercaseError,
+  PasswordWithoutLowercaseError
 };

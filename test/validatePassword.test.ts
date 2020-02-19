@@ -1,6 +1,10 @@
-import { LongPasswordError, ShortPasswordError } from "../src/Errors";
+import {
+  LongPasswordError,
+  PasswordWithoutLowercaseError,
+  PasswordWithoutUppercaseError,
+  ShortPasswordError
+} from "../src/Errors";
 import { validatePassword } from "../src";
-import { PasswordWithoutUppercaseError } from "../src/Errors/PasswordWithoutUppercaseError";
 
 describe("validatePassword", () => {
   it("errors on short passwords", () => {
@@ -32,5 +36,11 @@ describe("validatePassword", () => {
     expect(() =>
       validatePassword("averysecretpass95")
     ).toThrow(PasswordWithoutUppercaseError);
+  });
+
+  it("errors on passwords without lowercase characters", () => {
+    expect(() =>
+      validatePassword("AVERYSECRETPASS95")
+    ).toThrow(PasswordWithoutLowercaseError);
   });
 });
