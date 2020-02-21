@@ -1,13 +1,12 @@
-import { WrongLengthCuitError } from "./WrongLengthCuitError";
-import { InvalidCuitError } from "./InvalidCuitError";
-import { EmptyNameError } from "./EmptyNameError";
-import { LongNameError } from "./LongNameError";
-import { NameWithDigitsError } from "./NameWithDigitsError";
-
-export {
-  EmptyNameError,
-  LongNameError,
-  NameWithDigitsError,
-  WrongLengthCuitError,
-  InvalidCuitError
-};
+export * from "./WrongLengthCuitError";
+export * from "./InvalidCuitError";
+export * from "./EmptyNameError";
+export * from "./LongNameError";
+export * from "./NameWithDigitsError";
+export * from "./InvalidEmailError";
+export * from "./ShortPasswordError";
+export * from "./LongPasswordError";
+export * from "./PasswordWithoutUppercaseError";
+export * from "./PasswordWithoutLowercaseError";
+export * from "./PasswordWithoutDigitsError";
+export * from "./PasswordWithSpacesError";

@@ -1,4 +1,4 @@
-import { WrongLengthCuitError, InvalidCuitError } from "./Errors";
+import { WrongLengthCuitError, InvalidCuitError } from "../Errors";
 
 const validateCuit = (cuit: string) => {
   if (!cuit) throw new InvalidCuitError();

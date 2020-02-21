@@ -1,4 +1,2 @@
-import { validateCuit } from "./cuitValidator";
-import { validateName } from "./validateName";
-
-export { validateName, validateCuit };
+export * from "./Errors";
+export * from "./Validators";

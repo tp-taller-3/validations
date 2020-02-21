@@ -1,7 +1,7 @@
 import { validateCuit } from "../src";
 import { WrongLengthCuitError, InvalidCuitError } from "../src/Errors";
 
-describe("cuitValidator", () => {
+describe("validateCuit", () => {
   it("raise an error if cuit has less than eleven digits", () => {
     expect(() => validateCuit("23")).toThrow(WrongLengthCuitError);
   });
