@@ -6,7 +6,7 @@ import {
   ShortPasswordError,
   PasswordWithoutDigitsError,
   PasswordWithSpacesError
-} from "./Errors";
+} from "../Errors";
 
 const minLength = 10;
 const maxLength = 100;
