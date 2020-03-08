@@ -1,5 +1,5 @@
 export class EmptyNameError extends Error {
   constructor() {
-    super("Field can't be empty");
+    super("El nombre no puede ser vacío");
   }
 }
