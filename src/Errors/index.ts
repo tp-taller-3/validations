@@ -10,3 +10,4 @@ export * from "./PasswordWithoutUppercaseError";
 export * from "./PasswordWithoutLowercaseError";
 export * from "./PasswordWithoutDigitsError";
 export * from "./PasswordWithSpacesError";
+export * from "./NegativeNumberError";
