@@ -1,5 +1,9 @@
 export class InvalidEmailError extends Error {
+  public static buildMessage(email: string) {
+    return `Email invalido ${email}`;
+  }
+
   constructor(email: string) {
-    super(`Email invalido ${email}`);
+    super(InvalidEmailError.buildMessage(email));
   }
 }
