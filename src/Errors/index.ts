@@ -11,3 +11,4 @@ export * from "./PasswordWithoutLowercaseError";
 export * from "./PasswordWithoutDigitsError";
 export * from "./PasswordWithSpacesError";
 export * from "./NegativeNumberError";
+export * from "./SalaryRangeError";
