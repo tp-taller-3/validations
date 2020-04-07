@@ -5,3 +5,4 @@ export * from "./validatePassword";
 export * from "./validatePositiveNumber";
 export * from "./validateSalaryRange";
 export * from "./validateNumber";
+export * from "./validateInteger";
