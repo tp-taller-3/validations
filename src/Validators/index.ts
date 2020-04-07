@@ -6,3 +6,4 @@ export * from "./validateSalaryRange";
 export * from "./validateNumber";
 export * from "./validateInteger";
 export * from "./validateNumberGreaterThan";
+export * from "./validateIntegerGreaterThan";
