@@ -7,10 +7,10 @@ describe("validatePositiveNumber", () => {
   });
 
   it("should return true if number is bigger than zero", () => {
-    expect(validatePositiveNumber(23)).toBeTruthy();
+    expect(validatePositiveNumber(23)).toBe(true);
   });
 
   it("should return true if number is zero", () => {
-    expect(validatePositiveNumber(0)).toBeTruthy();
+    expect(validatePositiveNumber(0)).toBe(true);
   });
 });

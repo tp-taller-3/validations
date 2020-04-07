@@ -7,10 +7,10 @@ describe("validateSalaryRange", () => {
   });
 
   it("should return true if minimumSalary is lower than maximumSalary", () => {
-    expect(validateSalaryRange(100, 200)).toBeTruthy();
+    expect(validateSalaryRange(100, 200)).toBe(true);
   });
 
   it("should return true if minimumSalary is equal to maximumSalary", () => {
-    expect(validateSalaryRange(100, 100)).toBeTruthy();
+    expect(validateSalaryRange(100, 100)).toBe(true);
   });
 });
