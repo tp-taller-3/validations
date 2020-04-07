@@ -10,7 +10,7 @@ export * from "./PasswordWithoutUppercaseError";
 export * from "./PasswordWithoutLowercaseError";
 export * from "./PasswordWithoutDigitsError";
 export * from "./PasswordWithSpacesError";
-export * from "./NegativeNumberError";
+export * from "./NumberIsTooSmallError";
 export * from "./SalaryRangeError";
 export * from "./NumberIsNaNError";
 export * from "./NumberIsNotIntegerError";
