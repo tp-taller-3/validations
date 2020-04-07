@@ -1,6 +1,6 @@
 export class NumberIsNaNError extends Error {
   public static buildMessage() {
-    return "El número no debe ser NaN";
+    return "Debe ser un número";
   }
 
   constructor() {
