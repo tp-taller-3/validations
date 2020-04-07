@@ -6,7 +6,7 @@ describe("validateNumber", () => {
     expect(() => validateNumber(NaN)).toThrow(NumberIsNaNError);
   });
 
-  it("should return true if number is not NaN", () => {
-    expect(validateNumber(23)).toBe(true);
+  it("should not raise an error if number is not NaN", () => {
+    expect(() => validateNumber(23)).not.toThrow();
   });
 });

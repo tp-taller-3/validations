@@ -10,7 +10,7 @@ describe("validateInteger", () => {
     expect(() => validateInteger(23.02)).toThrow(NumberIsNotIntegerError);
   });
 
-  it("should return true if number is an integer", () => {
-    expect(validateInteger(23)).toBe(true);
+  it("should not raise an error if number is an integer", () => {
+    expect(() => validateInteger(23)).not.toThrow();
   });
 });

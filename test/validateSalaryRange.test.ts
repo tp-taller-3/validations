@@ -6,11 +6,11 @@ describe("validateSalaryRange", () => {
     expect(() => validateSalaryRange(100, 50)).toThrow(SalaryRangeError);
   });
 
-  it("should return true if minimumSalary is lower than maximumSalary", () => {
-    expect(validateSalaryRange(100, 200)).toBe(true);
+  it("should not raise an error if minimumSalary is lower than maximumSalary", () => {
+    expect(() => validateSalaryRange(100, 200)).not.toThrow();
   });
 
-  it("should return true if minimumSalary is equal to maximumSalary", () => {
-    expect(validateSalaryRange(100, 100)).toBe(true);
+  it("should not raise an error if minimumSalary is equal to maximumSalary", () => {
+    expect(() => validateSalaryRange(100, 100)).not.toThrow();
   });
 });

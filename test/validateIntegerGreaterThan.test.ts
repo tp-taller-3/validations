@@ -14,11 +14,11 @@ describe("validateIntegerGreaterThan", () => {
     expect(() => validateIntegerGreaterThan(23.33, 0)).toThrow(NumberIsNotIntegerError);
   });
 
-  it("should return true if number is bigger than zero", () => {
-    expect(validateIntegerGreaterThan(23, 0)).toBe(true);
+  it("should not raise an error if number is bigger than zero", () => {
+    expect(() => validateIntegerGreaterThan(23, 0)).not.toThrow();
   });
 
-  it("should return true if number is bigger than one hundred", () => {
-    expect(validateIntegerGreaterThan(200, 100)).toBe(true);
+  it("should not raise an error if number is bigger than one hundred", () => {
+    expect(() => validateIntegerGreaterThan(200, 100)).not.toThrow();
   });
 });
