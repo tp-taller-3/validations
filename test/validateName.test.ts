@@ -11,11 +11,11 @@ describe("validateName", () => {
     expect(() => validateName(longName)).toThrow(LongNameError);
   });
 
-  it("raise and error if name has digits", () => {
+  it("should raise and error if name has digits", () => {
     expect(() => validateName("Google34")).toThrow(NameWithDigitsError);
   });
 
-  it("returns true if name is valid", () => {
-    expect(validateName("Devartis")).toBeTruthy();
+  it("should not raise an error if name is valid", () => {
+    expect(() => validateName("Devartis")).not.toThrow();
   });
 });

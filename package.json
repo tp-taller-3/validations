@@ -1,6 +1,6 @@
 {
   "name": "validations-fiuba-laboral-v2",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Trabajo Práctico Profesional, FIUBA, 2020",
   "contributors": [
     "Sebastian Blanco <sebastian.e.blanco@gmail.com>",
@@ -45,6 +45,7 @@
   },
   "scripts": {
     "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "test": "jest --coverage --runInBand",
     "coverage": "cat coverage/lcov.info | coveralls",
     "lint:src": "tslint -c tslint.json 'src/**/*.ts'",
