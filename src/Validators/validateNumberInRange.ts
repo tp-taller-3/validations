@@ -28,7 +28,7 @@ export interface IRange {
 }
 
 interface IRangeBound {
-  value?: number;
+  value: number;
   include: boolean;
 }
 

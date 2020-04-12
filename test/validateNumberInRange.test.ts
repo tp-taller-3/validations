@@ -63,16 +63,4 @@ describe("validateNumberInRange", () => {
       }
     })(200)).not.toThrow()
   );
-
-  it("ignores bound if its value is not set", () =>
-    expect(() => validateNumberInRange({
-      min: {
-        value: 100,
-        include: false
-      },
-      max: {
-        include: true
-      }
-    })(200)).not.toThrow()
-  );
 });
