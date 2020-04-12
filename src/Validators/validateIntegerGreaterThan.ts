@@ -1,11 +1,12 @@
 import { validateInteger } from "../Validators";
 import { NumberIsTooSmallError } from "../Errors";
 
-const validateIntegerGreaterThan = (lowerBound: number) => {
-  return (aNumber: number) => {
+const validateIntegerGreaterThan = (lowerBound: number, options?: { orEqual?: boolean }) => (
+  (aNumber: number) => {
     validateInteger(aNumber);
-    if (aNumber < lowerBound) throw new NumberIsTooSmallError(aNumber, lowerBound);
-  };
-};
+    const isValid = aNumber > lowerBound || (options?.orEqual && aNumber === lowerBound);
+    if (!isValid) throw new NumberIsTooSmallError(aNumber, lowerBound, options?.orEqual);
+  }
+);
 
 export { validateIntegerGreaterThan };
