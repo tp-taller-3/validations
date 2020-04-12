@@ -1,7 +1,7 @@
 import { validateNumberInRange } from "../src";
 import { NumberIsNaNError, NumberIsTooSmallError } from "../src/Errors";
 
-describe("validateNumberGreaterThan", () => {
+describe("validateNumberInRange", () => {
   it("should raise an error if number is negative", () =>
     expect(() => validateNumberInRange({
       min: {

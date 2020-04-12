@@ -1,7 +1,7 @@
 import { validateIntegerInRange } from "../src";
 import { NumberIsNaNError, NumberIsNotIntegerError, NumberIsTooSmallError } from "../src/Errors";
 
-describe("validateIntegerGreaterThan", () => {
+describe("validateIntegerInRange", () => {
   it("should raise an error if number is negative", () =>
     expect(() => validateIntegerInRange({
       min: {
@@ -90,6 +90,64 @@ describe("validateIntegerGreaterThan", () => {
       "El número debe ser mayor o igual a 100"
     )
   );
+
+  describe("max and min are equal", () => {
+    it("allows that value if both includes are true", () =>
+      expect(() => validateIntegerInRange({
+        min: {
+          value: 100,
+          include: true
+        },
+        max: {
+          value: 100,
+          include: true
+        }
+      })(100)).not.toThrow()
+    );
+
+    it("does not allow that value if max's include is false", () =>
+      expect(() => validateIntegerInRange({
+        min: {
+          value: 100,
+          include: true
+        },
+        max: {
+          value: 100,
+          include: false
+        }
+      })(100)).toThrow(
+        "El número debe ser menor a 100"
+      )
+    );
+
+    it("does not allow that value if min's include is false", () =>
+      expect(() => validateIntegerInRange({
+        min: {
+          value: 100,
+          include: false
+        },
+        max: {
+          value: 100,
+          include: true
+        }
+      })(100)).toThrow("El número debe ser mayor a 100")
+    );
+
+    it("does not allow any value if both includes are false", () =>
+      expect(() => validateIntegerInRange({
+        min: {
+          value: 100,
+          include: false
+        },
+        max: {
+          value: 100,
+          include: false
+        }
+      })(100)).toThrow(
+        "El número debe ser mayor a 100"
+      )
+    );
+  });
 
   it("ignores bound if its value is not set", () =>
     expect(() => validateIntegerInRange({
