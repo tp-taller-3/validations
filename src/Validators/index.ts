@@ -5,6 +5,6 @@ export { validatePassword } from "./validatePassword";
 export { validateSalaryRange } from "./validateSalaryRange";
 export { validateNumber } from "./validateNumber";
 export { validateInteger } from "./validateInteger";
-export { validateNumberGreaterThan } from "./validateNumberGreaterThan";
-export { validateIntegerGreaterThan } from "./validateIntegerGreaterThan";
+export { validateNumberInRange } from "./validateNumberInRange";
+export { validateIntegerInRange } from "./validateIntegerInRange";
 export { validateURL } from "./validateURL";

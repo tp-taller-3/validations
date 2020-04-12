@@ -1,9 +1,9 @@
 export class NumberIsTooSmallError extends Error {
-  public static buildMessage(aNumber: number, lowerBound: number) {
-    return `El número ${aNumber} debe ser mayor que ${lowerBound}`;
+  public static buildMessage(lowerBound: number, orEqual: boolean) {
+    return `El número debe ser mayor${orEqual ? " o igual " : " "}a ${lowerBound}`;
   }
 
-  constructor(aNumber: number, lowerBound: number) {
-    super(NumberIsTooSmallError.buildMessage(aNumber, lowerBound));
+  constructor(lowerBound: number, orEqual: boolean) {
+    super(NumberIsTooSmallError.buildMessage(lowerBound, orEqual));
   }
 }

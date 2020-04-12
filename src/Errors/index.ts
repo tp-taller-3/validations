@@ -11,6 +11,7 @@ export { PasswordWithoutLowercaseError } from "./PasswordWithoutLowercaseError";
 export { PasswordWithoutDigitsError } from "./PasswordWithoutDigitsError";
 export { PasswordWithSpacesError } from "./PasswordWithSpacesError";
 export { NumberIsTooSmallError } from "./NumberIsTooSmallError";
+export { NumberIsTooLargeError } from "./NumberIsTooLargeError";
 export { SalaryRangeError } from "./SalaryRangeError";
 export { NumberIsNaNError } from "./NumberIsNaNError";
 export { NumberIsNotIntegerError } from "./NumberIsNotIntegerError";
