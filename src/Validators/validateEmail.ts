@@ -1,8 +1,8 @@
-import * as EmailValidator from "email-validator";
-import { InvalidEmailError } from "../Errors/InvalidEmailError";
+import isEmail from "validator/lib/isEmail";
+import { InvalidEmailError } from "../Errors";
 
 const validateEmail = (email: string) => {
-  if (!EmailValidator.validate(email)) throw new InvalidEmailError(email);
+  if (!isEmail(email)) throw new InvalidEmailError(email);
 };
 
 export { validateEmail };

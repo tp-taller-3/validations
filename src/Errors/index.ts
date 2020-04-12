@@ -14,3 +14,4 @@ export * from "./NumberIsTooSmallError";
 export * from "./SalaryRangeError";
 export * from "./NumberIsNaNError";
 export * from "./NumberIsNotIntegerError";
+export * from "./InvalidURLError";
