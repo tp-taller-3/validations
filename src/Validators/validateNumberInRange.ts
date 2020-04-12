@@ -11,8 +11,7 @@ const validateNumberGreaterThan = (min: IRangeBound, aNumber: number) => {
 const validateNumberSmallerThan = (max: IRangeBound, aNumber: number) => {
   if (max.value === undefined) return;
   const isValid = max.include ? aNumber <= max.value : aNumber < max.value;
-  if (isValid) return;
-  throw new NumberIsTooLargeError(max.value, max.include);
+  if (!isValid) throw new NumberIsTooLargeError(max.value, max.include);
 };
 
 const validateNumberInRange = ({ min, max }: IRange) => {
