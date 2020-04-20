@@ -1,9 +1,9 @@
 export class NumberIsNotIntegerError extends Error {
-  public static buildMessage(aNumber: number) {
-    return `El número: ${aNumber} no es un entero`;
+  public static buildMessage() {
+    return "El número debe ser entero";
   }
 
-  constructor(aNumber: number) {
-    super(NumberIsNotIntegerError.buildMessage(aNumber));
+  constructor() {
+    super(NumberIsNotIntegerError.buildMessage());
   }
 }
