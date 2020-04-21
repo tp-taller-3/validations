@@ -3,7 +3,7 @@ import { NumberIsNotIntegerError } from "../Errors";
 
 const validateInteger = (aNumber: number) => {
   validateNumber(aNumber);
-  if (!Number.isInteger(aNumber)) throw new NumberIsNotIntegerError(aNumber);
+  if (!Number.isInteger(aNumber)) throw new NumberIsNotIntegerError();
 };
 
 export { validateInteger };
