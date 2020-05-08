@@ -18,7 +18,7 @@ const validatePhoneNumber = (
     { defaultCountry: countryCode }
   );
   if (parsedPhoneNumber && parsedPhoneNumber.isPossible() && parsedPhoneNumber.isValid()) return;
-  throw new InvalidPhoneNumberError(phoneNumber);
+  throw new InvalidPhoneNumberError();
 };
 
 export { validatePhoneNumber };
