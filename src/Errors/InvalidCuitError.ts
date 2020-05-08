@@ -1,6 +1,6 @@
 export class InvalidCuitError extends Error {
   public static buildMessage() {
-    return "Cuit con formato incorrecto";
+    return "CUIT inválido. Ejemplo: 30711819017";
   }
 
   constructor() {
