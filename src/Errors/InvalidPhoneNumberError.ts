@@ -1,9 +1,9 @@
 export class InvalidPhoneNumberError extends Error {
-  public static buildMessage(phoneNumber: string) {
-    return `El formato del número de teléfono: ${phoneNumber} es inválido`;
+  public static buildMessage() {
+    return "Número de telefono inválido. Ejemplo: 11 2939 0394";
   }
 
-  constructor(phoneNumber: string) {
-    super(InvalidPhoneNumberError.buildMessage(phoneNumber));
+  constructor() {
+    super(InvalidPhoneNumberError.buildMessage());
   }
 }
