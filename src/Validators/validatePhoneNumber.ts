@@ -7,7 +7,8 @@ interface IValidatePhoneNumberArguments {
 }
 
 const validatePhoneNumber = (
-  { phoneNumber,
+  {
+    phoneNumber,
     countryCode = "AR"
   }: IValidatePhoneNumberArguments
 ) => {
