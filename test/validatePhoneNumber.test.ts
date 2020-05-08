@@ -23,6 +23,10 @@ describe("validatePhoneNumber", () => {
       expect(() => validatePhoneNumber({ phoneNumber: "+54 (011) 5-987-1234" })).not.toThrow();
     });
 
+    it("does not throw an error on a telephone number with area code", () => {
+      expect(() => validatePhoneNumber({ phoneNumber: "1143075222" })).not.toThrow();
+    });
+
     it("throws an error for an empty string", () => {
       expect(() => validatePhoneNumber({ phoneNumber: "" })).toThrow(InvalidPhoneNumberError);
     });
@@ -49,6 +53,18 @@ describe("validatePhoneNumber", () => {
       expect(
         () => validatePhoneNumber({ phoneNumber: "54115P9871234" })
       ).toThrow(PhoneNumberWithLettersError);
+    });
+
+    it("throws an error if area code between brackets is not valid", () => {
+      expect(
+        () => validatePhoneNumber({ phoneNumber: "(012) 59871234" })
+      ).toThrow(InvalidPhoneNumberError);
+    });
+
+    it("throws an error if area code is not valid", () => {
+      expect(
+        () => validatePhoneNumber({ phoneNumber: "1259871234" })
+      ).toThrow(InvalidPhoneNumberError);
     });
   });
 });

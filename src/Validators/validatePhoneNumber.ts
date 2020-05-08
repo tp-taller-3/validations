@@ -6,12 +6,13 @@ interface IValidatePhoneNumberArguments {
   countryCode?: CountryCode;
 }
 
-export const validatePhoneNumber = (
+const validatePhoneNumber = (
   { phoneNumber,
     countryCode = "AR"
   }: IValidatePhoneNumberArguments
 ) => {
   if (phoneNumber.match(/[a-z]/i)) throw new PhoneNumberWithLettersError();
+
   const parsedPhoneNumber = parsePhoneNumberFromString(
     phoneNumber,
     { defaultCountry: countryCode }
@@ -19,3 +20,5 @@ export const validatePhoneNumber = (
   if (parsedPhoneNumber && parsedPhoneNumber.isPossible() && parsedPhoneNumber.isValid()) return;
   throw new InvalidPhoneNumberError(phoneNumber);
 };
+
+export { validatePhoneNumber };
