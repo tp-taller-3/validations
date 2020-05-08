@@ -49,6 +49,12 @@ describe("validatePhoneNumber", () => {
       ).toThrow(PhoneNumberWithLettersError);
     });
 
+    it("throws an error if traditional telephone number has no area code", () => {
+      expect(
+        () => validatePhoneNumber({ phoneNumber: "4307-6233" })
+      ).toThrow(InvalidPhoneNumberError);
+    });
+
     it("throws an error if phone number has a letter", () => {
       expect(
         () => validatePhoneNumber({ phoneNumber: "54115P9871234" })
