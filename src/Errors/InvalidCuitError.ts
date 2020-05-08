@@ -1,5 +1,9 @@
 export class InvalidCuitError extends Error {
+  public static buildMessage() {
+    return "Cuit con formato incorrecto";
+  }
+
   constructor() {
-    super("Cuit con formato incorrecto");
+    super(InvalidCuitError.buildMessage());
   }
 }
