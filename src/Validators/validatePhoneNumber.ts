@@ -1,5 +1,5 @@
 import { parsePhoneNumberFromString, CountryCode } from "libphonenumber-js";
-import { InvalidPhoneNumberError } from "../Errors";
+import { InvalidPhoneNumberError, PhoneNumberWithLettersError } from "../Errors";
 
 interface IValidatePhoneNumberArguments {
   phoneNumber: string;
@@ -11,6 +11,7 @@ export const validatePhoneNumber = (
     countryCode = "AR"
   }: IValidatePhoneNumberArguments
 ) => {
+  if (phoneNumber.match(/[a-z]/i)) throw new PhoneNumberWithLettersError();
   const parsedPhoneNumber = parsePhoneNumberFromString(
     phoneNumber,
     { defaultCountry: countryCode }
