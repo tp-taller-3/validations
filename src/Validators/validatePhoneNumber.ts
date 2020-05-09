@@ -12,7 +12,7 @@ const validatePhoneNumberWithCountryCode = (
     countryCode
   }: IValidatePhoneNumberArguments) => {
   const parsedPhoneNumber = parsePhoneNumberFromString(phoneNumber, countryCode);
-  if (parsedPhoneNumber && parsedPhoneNumber.isPossible() && parsedPhoneNumber.isValid()) return;
+  if (parsedPhoneNumber?.isPossible() && parsedPhoneNumber.isValid()) return;
   throw new InvalidPhoneNumberError();
 };
 
