@@ -16,3 +16,5 @@ export { SalaryRangeError } from "./SalaryRangeError";
 export { NumberIsNaNError } from "./NumberIsNaNError";
 export { NumberIsNotIntegerError } from "./NumberIsNotIntegerError";
 export { InvalidURLError } from "./InvalidURLError";
+export { InvalidPhoneNumberError } from "./InvalidPhoneNumberError";
+export { PhoneNumberWithLettersError } from "./PhoneNumberWithLettersError";
