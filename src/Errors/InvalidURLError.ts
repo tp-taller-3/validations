@@ -1,5 +1,9 @@
 export class InvalidURLError extends Error {
+  public static buildMessage() {
+    return "La URL es inválida";
+  }
+
   constructor() {
-    super("La URL es inválida");
+    super(InvalidURLError.buildMessage());
   }
 }
