@@ -1,7 +1,6 @@
 export { WrongLengthCuitError } from "./WrongLengthCuitError";
 export { InvalidCuitError } from "./InvalidCuitError";
 export { EmptyNameError } from "./EmptyNameError";
-export { LongNameError } from "./LongNameError";
 export { NameWithDigitsError } from "./NameWithDigitsError";
 export { InvalidEmailError } from "./InvalidEmailError";
 export { ShortPasswordError } from "./ShortPasswordError";
