@@ -12,11 +12,6 @@ describe("validateDni", () => {
     expect(() => validateDni(39207888)).not.toThrow();
   });
 
-  it("does not throw an error if dni is undefined", () => {
-    expect(() => validateDni(undefined)).not.toThrow();
-  });
-
-
   it("throws an error if dni has less than nine digits", () => {
     expectToThrowErrorWithDni(11);
   });
