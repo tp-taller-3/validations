@@ -1,5 +1,5 @@
 import { validateDni } from "../src";
-import { InvalidDniError } from "../src/Errors";
+import { InvalidDniError, DniIsUndefinedError } from "../src/Errors";
 
 describe("validateDni", () => {
   const expectToThrowErrorWithDni = (dni: number) => {
@@ -11,6 +11,13 @@ describe("validateDni", () => {
   it("does not throw an error if the dni has nine digits", () => {
     expect(() => validateDni(39207888)).not.toThrow();
   });
+
+  it("throws an error if dni is undefined", () => {
+    const matcher = expect(() => validateDni(undefined));
+    matcher.toThrow(DniIsUndefinedError);
+    matcher.toThrow(DniIsUndefinedError.buildMessage());
+  });
+
 
   it("throws an error if dni has less than nine digits", () => {
     expectToThrowErrorWithDni(11);

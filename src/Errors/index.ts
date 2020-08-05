@@ -18,3 +18,4 @@ export { InvalidURLError } from "./InvalidURLError";
 export { InvalidPhoneNumberError } from "./InvalidPhoneNumberError";
 export { PhoneNumberWithLettersError } from "./PhoneNumberWithLettersError";
 export { InvalidDniError } from "./InvalidDniError";
+export { DniIsUndefinedError } from "./DniIsUndefinedError";
