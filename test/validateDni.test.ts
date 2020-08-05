@@ -12,7 +12,7 @@ describe("validateDni", () => {
     expect(() => validateDni(39207888)).not.toThrow();
   });
 
-  it("does not throw an error if no dni is undefined", () => {
+  it("does not throw an error if dni is undefined", () => {
     expect(() => validateDni(undefined)).not.toThrow();
   });
 
