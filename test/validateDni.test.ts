@@ -2,11 +2,25 @@ import { validateDni } from "../src";
 import { InvalidDniError } from "../src/Errors";
 
 describe("validateDni", () => {
-  it("raises an error if dni has less than nine digits", () => {
-    expect(() => validateDni(11)).toThrow(InvalidDniError);
-  });
+  const expectToThrowErrorWithDni = (dni: number) => {
+    const matcher = expect(() => validateDni(dni));
+    matcher.toThrow(InvalidDniError);
+    matcher.toThrow(InvalidDniError.buildMessage(dni));
+  };
 
   it("does not raise an error if the dni has nine digits", () => {
     expect(() => validateDni(39207888)).not.toThrow();
+  });
+
+  it("raises an error if dni has less than nine digits", () => {
+    expectToThrowErrorWithDni(11);
+  });
+
+  it("raises an error if dni has mote than nine digits", () => {
+    expectToThrowErrorWithDni(1111111111);
+  });
+
+  it("raises an error if dni is negative", () => {
+    expectToThrowErrorWithDni(-39207999);
   });
 });
