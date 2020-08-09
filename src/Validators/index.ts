@@ -9,4 +9,3 @@ export { validateNumberInRange } from "./validateNumberInRange";
 export { validateIntegerInRange } from "./validateIntegerInRange";
 export { validateURL } from "./validateURL";
 export { validatePhoneNumber } from "./validatePhoneNumber";
-export { validateDni } from "./validateDni";
