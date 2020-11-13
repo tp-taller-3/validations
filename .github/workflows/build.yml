@@ -19,5 +19,5 @@ jobs:
       - name: Publish package
         if: contains('refs/heads/master', github.ref)
         uses: JS-DevTools/npm-publish@v1
-          with:
-            token: ${{ secrets.NPM_PUBLISH_TOKEN }}
+        with:
+          token: ${{ secrets.NPM_PUBLISH_TOKEN }}
