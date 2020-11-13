@@ -17,8 +17,8 @@ describe("validateNumber", () => {
   });
 
   it("should raise an error if number is smaller than the smallest 32 bit integer", () => {
-    expect(() => validateNumber(-Math.pow(2, 32) / 2)).toThrow(
-      "El número debe ser menor o igual a 2147483647"
+    expect(() => validateNumber(-1 - Math.pow(2, 32) / 2)).toThrow(
+      "El número debe ser mayor o igual a -2147483648"
     );
   });
 });
