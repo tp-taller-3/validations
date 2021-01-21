@@ -22,6 +22,10 @@ describe("validateFiubaEmail", () => {
     expect(() => validateFiubaEmail("asd@fi.uba")).toThrow(InvalidFiubaEmailError);
   });
 
+  it("throws an error if the fiuba email does not have the @ symbol", () => {
+    expect(() => validateFiubaEmail("asdfi.uba.ar")).toThrow(InvalidEmailError);
+  });
+
   it("does not throw error if the emails has a valid domain", () => {
     expect(() => validateFiubaEmail("asd@fi.uba.ar")).not.toThrowError();
   });
