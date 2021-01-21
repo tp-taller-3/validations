@@ -10,3 +10,4 @@ export { validateIntegerInRange } from "./validateIntegerInRange";
 export { validateURL } from "./validateURL";
 export { validatePhoneNumber } from "./validatePhoneNumber";
 export { validateCareerYear } from "./validateCareerYear";
+export { validateFiubaEmail } from "./validateFiubaEmail";
