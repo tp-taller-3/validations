@@ -36,10 +36,11 @@ de Typescript del directorio de `test`.
 
 ### Comando útil para desarrollo
 
-Siendo que este repositorio es una librería que se publica en `npm`, al momento
-de desarrollar es útil que cualquier cambio impacte en el repositorio que utiliza
-esta misma. De esta manera existe una manera de linkear de manera local este repositorio
-con el repositorio que utiliza y descarga esta librería de la siguiente manera:
+Para probar los cambios localmente sin tener que subir una nueva versión 
+a npm se le puede indicar a yarn que utilice una carpeta en el disco 
+local en reemplazo del repositorio remoto. De esta manera existe una manera 
+de linkear de manera local este repositorio con el repositorio que 
+utiliza y descarga esta librería de la siguiente manera:
 
 Pararse sobre la carpeta raíz de este repositorio y ejecutar:
 ```bash
