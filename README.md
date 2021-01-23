@@ -38,9 +38,7 @@ de Typescript del directorio de `test`.
 
 Para probar los cambios localmente sin tener que subir una nueva versión 
 a npm se le puede indicar a yarn que utilice una carpeta en el disco 
-local en reemplazo del repositorio remoto. De esta manera existe una manera 
-de linkear de manera local este repositorio con el repositorio que 
-utiliza y descarga esta librería de la siguiente manera:
+local en reemplazo del repositorio remoto:
 
 Pararse sobre la carpeta raíz de este repositorio y ejecutar:
 ```bash
