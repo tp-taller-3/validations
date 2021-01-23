@@ -5,31 +5,50 @@ Trabajo Práctico Profesional, FIUBA, 2020
   * **Build:** ![Build status](https://github.com/fiuba-laboral-v2/validations/workflows/validations-build/badge.svg)  
   * **Coverage:** [![Coverage Status](https://coveralls.io/repos/github/fiuba-laboral-v2/validations/badge.svg)](https://coveralls.io/github/fiuba-laboral-v2/validations)
 
-# Get started
+## A tener en cuenta
 
-```
-    npm install
-```
+Al momento de publicar una nueva version de esta librería es necesario modificar
+el número de versión en el archivo `package.json` y luego ejecutar `npm install` para
+que el número de versión se vea reflejado en el archivo `package-lock.json`.
 
-### Linter
+## Comandos de npm
 
-```
-    npm run lint
-```
+- `npm install`: Este comando instala las dependencias especificadas en el
+  archivo `package.json`.
+  
+- `npm test`: Este comando ejecuta los tests.
 
-### Test
-```
-    npm test
-```
+- `npm run lint`: Este comando ejecuta el linter `tslint` sobre los archivos 
+de Typescript.
 
-### development
+- `npm run lint:src`: Este comando ejecuta el linter `tslint` sobre los archivos 
+de Typescript del directorio de `src`.
 
-Stand on this repository root and run:
-```
+- `npm run lint:test`: Este comando ejecuta el linter `tslint` sobre los archivos 
+de Typescript del directorio de `test`.
+
+- `npm run stash`: Este comando utiliza el stash de git para ocultar los archivos
+  que no están agregados para el commit. Se usa al momento de querer realizar un commit cuando
+  tenemos archivos nuevos sin agregar.
+
+- `npm run unstash`: Este comando saca de la pila del stash de git los últimos
+  archivos del stash.
+
+### Comando útil para desarrollo
+
+Siendo que este repositorio es una librería que se publica en `npm`, al momento
+de desarrollar es útil que cualquier cambio impacte en el repositorio que utiliza
+esta misma. De esta manera existe una manera de linkear de manera local este repositorio
+con el repositorio que utiliza y descarga esta librería de la siguiente manera:
+
+Pararse sobre la carpeta raíz de este repositorio y ejecutar:
+```bash
     yarn link
 ```
 
-Then, stand on the repository root that uses this lib and run:
-```
+Luego, ir a la carpeta raíz del repositorio que utiliza y descarga 
+esta librería y ejecutar:
+
+```bash
     yarn link "validations-fiuba-laboral-v2"
 ```
