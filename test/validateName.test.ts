@@ -7,6 +7,11 @@ describe("validateName", () => {
   });
 
   it("does not raise and error for long names that have less than 100 caracteres", () => {
+    const longName = "D".repeat(99);
+    expect(() => validateName(longName)).not.toThrow();
+  });
+
+  it("does not raise and error for a name with a 100 caracteres", () => {
     const longName = "D".repeat(100);
     expect(() => validateName(longName)).not.toThrow();
   });
