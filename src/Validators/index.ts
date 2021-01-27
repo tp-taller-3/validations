@@ -11,3 +11,4 @@ export { validateURL } from "./validateURL";
 export { validatePhoneNumber } from "./validatePhoneNumber";
 export { validateCareerYear } from "./validateCareerYear";
 export { validateFiubaEmail } from "./validateFiubaEmail";
+export { validateStringLength } from "./validateStringLength";
