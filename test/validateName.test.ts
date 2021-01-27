@@ -1,5 +1,5 @@
 import { validateName } from "../src";
-import { EmptyNameError, NameWithDigitsError, NameIsTooLargeError } from "../src/Errors";
+import { EmptyNameError, NameWithDigitsError, StringIsTooLargeError } from "../src/Errors";
 
 describe("validateName", () => {
   it("does not throw an error if name is valid", () => {
@@ -25,6 +25,6 @@ describe("validateName", () => {
   });
 
   it("throws and error if name has more than a hundred caracteres", () => {
-    expect(() => validateName("g".repeat(101))).toThrow(NameIsTooLargeError);
+    expect(() => validateName("g".repeat(101))).toThrow(StringIsTooLargeError);
   });
 });
