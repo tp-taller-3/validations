@@ -1,9 +1,10 @@
-import { EmptyNameError, NameWithDigitsError, NameIsTooLargeError } from "../Errors";
+import { EmptyNameError, NameWithDigitsError } from "../Errors";
+import { validateStringLength } from "./validateStringLength";
 
 const validateName = name => {
   if (name.length === 0) throw new EmptyNameError();
   if (/\d/.test(name)) throw new NameWithDigitsError();
-  if (name.length > 100) throw new NameIsTooLargeError(100);
+  validateStringLength(name);
 };
 
 export { validateName };
