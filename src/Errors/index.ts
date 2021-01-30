@@ -19,3 +19,4 @@ export { InvalidPhoneNumberError } from "./InvalidPhoneNumberError";
 export { PhoneNumberWithLettersError } from "./PhoneNumberWithLettersError";
 export { InvalidFiubaEmailError } from "./InvalidFiubaEmailError";
 export { StringIsTooLargeError } from "./StringIsTooLargeError";
+export { StringWithSpacesError } from "./StringWithSpacesError";
