@@ -2,6 +2,7 @@ import { WrongLengthCuitError, InvalidCuitError } from "../Errors";
 
 const validateCuit = (cuit: string) => {
   if (!cuit) throw new InvalidCuitError();
+  if (!Number(cuit)) throw new InvalidCuitError();
   if (cuit.length !== 11) throw new WrongLengthCuitError();
 
   const multipliers = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2];
