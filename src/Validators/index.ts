@@ -13,3 +13,4 @@ export { validateCareerYear } from "./validateCareerYear";
 export { validateFiubaEmail } from "./validateFiubaEmail";
 export { validateStringLength } from "./validateStringLength";
 export { validateStringSpaces } from "./validateStringSpaces";
+export { validateStringNumber } from "./validateStringNumber";
