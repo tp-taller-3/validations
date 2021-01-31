@@ -33,6 +33,16 @@ describe("validateName", () => {
     expect(() => validateName("Devartis  SA")).toThrow(NameWithMultipleSpaces);
   });
 
+  it("throws an error if name has newlines", () => {
+    const name = "\
+      this\
+      is a multi\
+      line\
+      string\
+    ";
+    expect(() => validateName(name)).toThrow(NameWithMultipleSpaces);
+  });
+
   it("throws and error if name has digits", () => {
     expect(() => validateName("Google34")).toThrow(NameWithDigitsError);
   });
