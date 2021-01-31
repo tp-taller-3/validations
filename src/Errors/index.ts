@@ -20,3 +20,4 @@ export { PhoneNumberWithLettersError } from "./PhoneNumberWithLettersError";
 export { InvalidFiubaEmailError } from "./InvalidFiubaEmailError";
 export { StringIsTooLargeError } from "./StringIsTooLargeError";
 export { StringWithSpacesError } from "./StringWithSpacesError";
+export { NameWithMultipleSpaces } from "./NameWithMultipleSpaces";
