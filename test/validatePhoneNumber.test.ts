@@ -23,7 +23,7 @@ describe("validatePhoneNumber", () => {
   });
 
   it("does not throw an error on a telephone number with area code", () => {
-    expect(() => validatePhoneNumber("1143075222" )).not.toThrow();
+    expect(() => validatePhoneNumber("1143075222")).not.toThrow();
   });
 
   it("does not throw an error on valid formats for argentinian landlines", () => {

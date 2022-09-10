@@ -15,7 +15,7 @@ describe("validateCuit", () => {
   });
 
   it("throws an error if cuit first two digits is a non existent type person", () => {
-    const typePerson: string =  "01";
+    const typePerson: string = "01";
     const dni: string = "39207882";
     const verificationCode: string = "7";
     const cuit: string = `${typePerson}${dni}${verificationCode}`;
