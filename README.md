@@ -1,7 +1,7 @@
 # Administrador de Cursos: validaciones
 Trabajo Práctico Profesional, FIUBA, 2020
 
-**Master:** 
+**Main:** 
   * **Build:** ![Build status](https://github.com/fiuba-course-admin/validations/workflows/validations-build/badge.svg)  
   * **Coverage:** [![Coverage Status](https://coveralls.io/repos/github/fiuba-course-admin/validations/badge.svg)](https://coveralls.io/github/fiuba-course-admin/validations)
 
