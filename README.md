@@ -1,9 +1,9 @@
-# Bolsa de Trabajo FIUBA: validaciones
+# Administrador de Cursos: validaciones
 Trabajo Práctico Profesional, FIUBA, 2020
 
 **Master:** 
-  * **Build:** ![Build status](https://github.com/fiuba-laboral-v2/validations/workflows/validations-build/badge.svg)  
-  * **Coverage:** [![Coverage Status](https://coveralls.io/repos/github/fiuba-laboral-v2/validations/badge.svg)](https://coveralls.io/github/fiuba-laboral-v2/validations)
+  * **Build:** ![Build status](https://github.com/fiuba-course-admin/validations/workflows/validations-build/badge.svg)  
+  * **Coverage:** [![Coverage Status](https://coveralls.io/repos/github/fiuba-course-admin/validations/badge.svg)](https://coveralls.io/github/fiuba-course-admin/validations)
 
 ## A tener en cuenta
 
@@ -49,5 +49,5 @@ Luego, ir a la carpeta raíz del repositorio que utiliza y descarga
 esta librería y ejecutar:
 
 ```bash
-    yarn link "validations-fiuba-laboral-v2"
+    yarn link "validations-fiuba-course-admin"
 ```
