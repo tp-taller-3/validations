@@ -1,6 +1,6 @@
 {
   "name": "validations-fiuba-course-admin",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "Trabajo Práctico Profesional, FIUBA, 2020",
   "contributors": [
     "Sebastian Blanco <sebastian.e.blanco@gmail.com>",
@@ -11,7 +11,7 @@
     "access": "public"
   },
   "engines": {
-    "node": "14.15.0",
+    "node": "14.20.0",
     "npm": "6.13.4"
   },
   "main": "dist/index.js",
@@ -24,7 +24,7 @@
     "express": "4.17.1",
     "husky": "3.1.0",
     "libphonenumber-js": "1.7.51",
-    "node": "14.15.0",
+    "node": "14.20.0",
     "password-validator": "5.0.3",
     "reflect-metadata": "0.1.13",
     "typescript-logging": "0.6.4",
