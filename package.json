@@ -1,6 +1,6 @@
 {
   "name": "validations-fiuba-course-admin",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "description": "Trabajo Práctico Profesional, FIUBA, 2020",
   "contributors": [
     "Sebastian Blanco <sebastian.e.blanco@gmail.com>",
@@ -36,7 +36,7 @@
     "babel-jest": "26.6.3",
     "eslint": "6.8.0",
     "jest": "26.6.3",
-    "ts-jest": "26.4.4",
+    "ts-jest": "26.5.6",
     "ts-node": "8.5.4",
     "tslint": "5.18.0",
     "tslint-config-fiuba-course-admin": "1.0.12",
