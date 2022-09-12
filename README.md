@@ -1,9 +1,10 @@
 # Administrador de Cursos: validaciones
-Trabajo Práctico Profesional, FIUBA, 2020
+
+TP Taller 3, FIUBA, 2022
 
 **Main:** 
-  * **Build:** ![Build status](https://github.com/fiuba-course-admin/validations/workflows/validations-build/badge.svg)  
-  * **Coverage:** [![Coverage Status](https://coveralls.io/repos/github/fiuba-course-admin/validations/badge.svg)](https://coveralls.io/github/fiuba-course-admin/validations)
+  * **Build:** ![Build status](https://github.com/tp-taller-3/validations/workflows/validations-build/badge.svg)  
+  * **Coverage:** [![Coverage Status](https://coveralls.io/repos/github/tp-taller-3/validations/badge.svg?branch=main)](https://coveralls.io/github/tp-taller-3/validations?branch=main)
 
 ## A tener en cuenta
 
