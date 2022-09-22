@@ -1,4 +1,4 @@
-# Administrador de Cursos: validaciones
+# Encuestas de Cursos: validaciones
 
 TP Taller 3, FIUBA, 2022
 
